@@ -1,12 +1,12 @@
 {
-  "name": "upstar_music",
+  "name": "",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "build": "webpack"
   },
-  "repository": "https://github.com/StephenGrider/WebpackProject",
+  "repository": "",
   "author": "",
   "license": "ISC",
   "dependencies": {
