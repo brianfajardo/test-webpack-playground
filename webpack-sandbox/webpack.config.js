@@ -2,7 +2,7 @@ const webpack = require('webpack')
 const path = require('path')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-
+// Dependencies
 const VENDOR_LIBS = [
   'faker',
   'lodash',
@@ -23,7 +23,7 @@ module.exports = {
   },
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: '[name].js'
+    filename: '[name].[chunkhash].js'
   },
   module: {
     rules: [
@@ -40,7 +40,7 @@ module.exports = {
   },
   plugins: [
     new webpack.optimize.CommonsChunkPlugin({
-      name: 'vendors'
+      names: ['vendors', 'manifest']
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
