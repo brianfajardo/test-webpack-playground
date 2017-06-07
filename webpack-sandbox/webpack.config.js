@@ -44,6 +44,6 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    }),
+    })
   ]
 }
