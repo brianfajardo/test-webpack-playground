@@ -31,7 +31,6 @@ if (process.env.NODE_ENV !== 'production') {
 }
 
 // Production providers will set their own PORT
-
 app.listen(process.env.PORT || 8000, () => {
   console.log(`Listening on ${process.env.PORT || 'localhost:8000'}`)
 })
